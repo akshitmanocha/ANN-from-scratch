@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
-train_data = pd.read_csv('/kaggle/input/digit-recognizer/train.csv')
-test_data = pd.read_csv('/kaggle/input/digit-recognizer/test.csv')
+train_data = pd.read_csv('train.csv')
+test_data = pd.read_csv('test.csv')
 X_train = train_data.iloc[:, 1:] 
 Y_train = train_data['label']
 X_test = test_data.iloc[:, 1:]
